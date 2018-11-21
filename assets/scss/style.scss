@@ -347,12 +347,12 @@ a{
 }
 .team_member{
 	border: 1px solid #fafafa;
-	margin: 6px;
+	margin: 9px;
 }
 .member_img_container{
 
 }
-.member_name{
+.person_name{
 	color: #ffffff;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 900;
@@ -361,7 +361,7 @@ a{
 	letter-spacing: 1px;
 	margin: 20px auto 10px auto;
 }
-.member_position{
+.person_position{
 	color: #fafafa;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 200;
@@ -404,6 +404,7 @@ a{
 	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
 	font-size: .875rem;
+	color: #413d4b;;
 	letter-spacing: 1px;
 }
 .dribble_link > a > span{
@@ -412,16 +413,97 @@ a{
 	vertical-align: middle;
 }
 .portfolio_img_container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 	width: 960px;
+	padding: 10px;
+}
+.portfolio_img_container > a{
+	width: 235px;
+	height: 175px;
 }
 .portfolio_footer{
 	display: flex;
 	justify-content: center;
 }
 .blue_button{
-	margin: 25px;
+	margin: 25px 25px 50px 25px;
 }
 .portfolio_footer > .blue_button:hover{
 	color: #413d4b;
 	border-color: #413d4b;
+}
+/***********
+  PEOPLE SAY
+************/
+#people_say{
+	background-image: url(../images/trees3.jpg);
+	background-size: cover;
+}
+.psay_overlay{
+	background: linear-gradient(to right, rgba(9,5,47,0.85) 0%,rgba(49,29,94,0.85) 100%);
+	min-height: 70vh;
+	display: flex;
+	justify-content: center;
+}
+.psay_content{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.quote{
+	font-size: 1rem;
+	color: #ffffff;
+	padding: 10px 90px 25px 90px;
+	text-align: center;
+}
+.quote::before{
+	content: "“";
+	display: block;
+	width: 50px;
+	height: 50px;
+	margin: 40px auto;
+	font-family: 'Playfair Display', serif;
+	font-weight: 400;
+	font-size: 6.25rem;
+}
+.person_quoted > .person_name{
+	margin: 10px;
+}
+/***********
+  CONTACT
+************/
+#contact{
+	background-color: #ffffff;
+	display: flex;
+	justify-content: center;
+}
+.contact_content{
+	margin-top: 50px;
+	display: flex;
+	justify-content: space-between;
+	min-height: 100vh;
+}
+#contact_form_container{
+	
+}
+#clients_container{
+
+}
+/***********
+  FOOTER
+************/
+#footer{
+	background-image: url(../images/desk.jpg);
+	background-size: cover;
+}
+.footer_overlay{
+	background: linear-gradient(to right, rgba(9,5,47,0.85) 0%,rgba(49,29,94,0.85) 100%);
+	min-height: 70vh;
+	display: flex;
+	justify-content: center;
+}
+.footer_content{
+
 }
