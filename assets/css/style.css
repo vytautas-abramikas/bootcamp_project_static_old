@@ -39,9 +39,9 @@ a {
   display: block;
 }
 
-/***********
-  COMMON
-************/
+/*****************
+  COMMON CONTENT
+******************/
 .content_width {
   max-width: 960px;
 }
@@ -275,7 +275,7 @@ a {
 }
 
 /***********
-  WATCH
+   WATCH
 ************/
 #watch {
   background-image: url(../images/city.jpg);
@@ -330,9 +330,9 @@ a {
   color: #00e0d0;
 }
 
-/***********
+/************
   EXPERTISE
-************/
+*************/
 #expertise {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -595,6 +595,12 @@ a {
   vertical-align: middle;
 }
 
+.dribble_link:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
 .portfolio_img_container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -710,6 +716,43 @@ a {
   -ms-flex-pack: justify;
   justify-content: space-between;
   min-height: 100vh;
+}
+
+.contact_form_container {
+  width: 50%;
+}
+
+input {
+  margin: 10px;
+  padding: 10px;
+}
+
+.form_field {
+  min-width: 90%;
+  min-height: 45px;
+  border: 1px solid #adacba;
+  display: block;
+  font-family: 'Roboto', sans-serif;
+  font-size: .875rem;
+}
+
+.contact_form > textarea {
+  display: block;
+  min-height: 200px;
+  padding: 10px;
+  margin: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-size: .875rem;
+}
+
+.contact_form > .blue_button {
+  background-color: #ffffff;
+  margin: 10px;
+}
+
+.contact_form > .blue_button:hover {
+  color: #413d4b;
+  border-color: #413d4b;
 }
 
 /***********
