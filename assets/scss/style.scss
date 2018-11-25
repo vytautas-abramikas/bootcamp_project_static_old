@@ -17,11 +17,9 @@ h4,
 p{
 	margin: 0;
 }
-/*
-font-family: 'Roboto', sans-serif;
-font-family: 'Hammersmith One', sans-serif;
-font-family: 'Playfair Display', serif;
-*/
+ul{
+	padding: 0;
+}
 /******************
    GENERAL STYLES
 *******************/
@@ -34,6 +32,9 @@ img{
 a{
 	text-decoration: none;
 	display: block;
+}
+li{
+	list-style-type: none;
 }
 /*****************
   COMMON CLASSES
@@ -121,7 +122,6 @@ a{
 }
 .main_menu{
 	display: flex;
-	list-style-type: none;
 	padding: 10px;
 	margin: 10px;
 }
@@ -522,7 +522,7 @@ a{
 }
 .footer_content{
 	margin: 0 auto;
-	min-height: 70vh;
+	min-height: 60vh;
 }
 .footer_top{
 	padding: 60px 10px 10px 10px;
@@ -600,6 +600,9 @@ a{
 	background-position: center;
 	border: 1px solid #adacba;
 }
+.subscribe_submit:hover{
+	background-color: #00e0d0;;
+}
 .social_container{
 	display: flex;
 	justify-content: left;
@@ -625,8 +628,37 @@ a{
     margin: auto;
 }
 .footer_bottom{
-
+}
+.bottom_all{
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: 50px auto 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+.bottom_left{
+}
+.bottom_menu_container{
+	display: flex;
+	justify-content: flex-start;
 }
 .bottom_menu{
-
+	display: flex;
+}
+.bottom_menu > li > a, .bottom_right{
+	font-family: 'Roboto', sans-serif;
+	font-size: .875rem;
+	font-weight: 400;
+	color: #adacba;
+	letter-spacing: 1px;
+	margin: 0px 10px;
+}
+.bottom_menu > li > a{
+}
+.bottom_menu > li > a:hover{
+	color: #00e0d0;
+}
+.bottom_right{
+	margin: auto 10px;
 }
