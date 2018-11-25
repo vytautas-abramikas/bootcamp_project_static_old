@@ -1,6 +1,6 @@
 window.onload = function() {
     // console.log("doc loaded, scripts loaded");
-	var h = document.getElementById('menu').scrollHeight;
+	var h = document.getElementById('menu').scrollHeight; //get menu height
 	var prevScrollpos = window.pageYOffset;
 
 	window.onscroll = function() {
