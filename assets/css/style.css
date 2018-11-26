@@ -117,7 +117,6 @@ li {
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 1;
 }
 
 .hero {
@@ -144,6 +143,7 @@ li {
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin: 10px auto;
+  z-index: 3;
 }
 
 .logo_container {
@@ -504,6 +504,10 @@ li {
 .team_member {
   border: 1px solid #fafafa;
   margin: 9px;
+}
+
+.member_img_container > img {
+  width: 100%;
 }
 
 .person_name {
@@ -950,4 +954,77 @@ li {
 
 .bottom_right {
   margin: auto 10px;
+}
+
+/***********
+ RESPONSIVE
+************/
+@media screen and (max-width: 800px) {
+  .main_menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  #hero_title {
+    padding-top: 150px;
+  }
+  .our_story_right {
+    width: 100%;
+    padding: 10px;
+  }
+  .our_story_right > .section_title {
+    text-align: center;
+  }
+  .our_story_p {
+    text-align: center;
+  }
+  .our_story_right > .blue_button {
+    margin: 0 auto;
+  }
+  .exp_items_container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .expertise_item {
+    width: 90%;
+  }
+  .contact_content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .contact_form_container {
+    width: 90%;
+  }
+  .clients_container_all {
+    width: 90%;
+  }
+  .contact_content .section_title {
+    text-align: center;
+  }
+  .contact_form_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .contact_form > .blue_button {
+    margin: 0 auto;
+  }
 }
