@@ -170,7 +170,7 @@ li {
   font-weight: 900;
   color: #ffffff;
   margin: 0px 11px;
-  text-shadow: 2px 2px #000000;
+  letter-spacing: 1px;
 }
 
 .main_menu > li > a:hover {
@@ -184,7 +184,7 @@ li {
   color: #ffffff;
   letter-spacing: 1px;
   text-align: center;
-  margin: 50px 10px 10px 20px;
+  margin: 50px 10px 10px 10px;
 }
 
 #hero_title::after {
@@ -198,6 +198,38 @@ li {
 
 .hero > .blue_button {
   margin: 50px auto;
+  background-color: transparent;
+}
+
+.hero > .blue_button:hover {
+  border-color: #ffffff;
+}
+
+.dots {
+  margin: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.dot {
+  width: 14px;
+  height: 14px;
+  border: 1px solid #ffffff;
+  border-radius: 7px;
+  margin: 3px;
+}
+
+.dot:hover {
+  border-color: #00e0d0;
+}
+
+.dot_current {
+  border-color: #00e0d0;
+  background-color: #00e0d0;
 }
 
 /***********
@@ -298,7 +330,7 @@ li {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 0;
+  left: 5px;
   right: 0;
   margin: auto;
 }
@@ -367,7 +399,7 @@ li {
 }
 
 .expertise_item {
-  max-width: 260px;
+  width: 27.1%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -388,7 +420,6 @@ li {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  height: 55px;
   margin: 10px;
 }
 
@@ -465,6 +496,9 @@ li {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .team_member {
@@ -676,6 +710,7 @@ li {
 
 .contact_form {
   padding-top: 10px;
+  width: 100%;
 }
 
 .form_field {
@@ -702,25 +737,21 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .cl_logo_cont {
-  width: 165px;
-  height: 75px;
-  margin: 0 10px 20px 0;
-  position: relative;
+  width: 45%;
+  margin: 20px 10px;
 }
 
 .cl_logo_cont > img {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
+  margin: 0 auto;
 }
 
 /***********
@@ -848,18 +879,18 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: left;
-  -ms-flex-pack: left;
-  justify-content: left;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   margin-top: 25px;
 }
 
 .social_network {
-  width: 35px;
-  height: 35px;
+  width: 36px;
+  height: 36px;
   border: 1px solid #adacba;
-  border-radius: 50px;
+  border-radius: 18px;
   margin-right: 12px;
+  margin-bottom: 12px;
   position: relative;
 }
 
