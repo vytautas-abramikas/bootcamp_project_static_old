@@ -241,7 +241,6 @@ li {
 
 .our_story_content {
   margin: 0 auto;
-  min-height: 60vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -250,6 +249,7 @@ li {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  padding-bottom: 30px;
 }
 
 .big_logo_container {
@@ -309,8 +309,9 @@ li {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  min-height: 80vh;
   margin: 0 auto;
+  padding-top: 100px;
+  padding-bottom: 60px;
 }
 
 .watch_circle {
@@ -355,7 +356,6 @@ li {
 }
 
 .expertise_content {
-  min-height: 100vh;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -367,6 +367,7 @@ li {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  padding-bottom: 20px;
 }
 
 .expertise_content > .section_title {
@@ -456,7 +457,6 @@ li {
 
 .team_content {
   margin: 0 auto;
-  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -467,6 +467,7 @@ li {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  padding-bottom: 40px;
 }
 
 .team_content > .section_title {
@@ -544,7 +545,6 @@ li {
 ************/
 #portfolio {
   background-color: #ffffff;
-  min-height: 100vh;
 }
 
 .portfolio_header {
@@ -647,7 +647,6 @@ li {
 
 .psay_content {
   margin: 0 auto;
-  min-height: 70vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -658,6 +657,7 @@ li {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  padding-bottom: 50px;
 }
 
 .quote {
@@ -697,7 +697,7 @@ li {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  min-height: 100vh;
+  padding-bottom: 50px;
 }
 
 .contact_content .section_title {
@@ -741,10 +741,6 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
@@ -768,7 +764,7 @@ li {
 
 .footer_content {
   margin: 0 auto;
-  min-height: 60vh;
+  padding-bottom: 20px;
 }
 
 .footer_top {
@@ -911,7 +907,7 @@ li {
   margin: auto;
 }
 
-.bottom_all {
+.footer_bottom {
   right: 0;
   bottom: 0;
   left: 0;
@@ -961,13 +957,13 @@ li {
 ************/
 @media screen and (max-width: 800px) {
   .main_menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+  }
+  .main_menu li {
+    padding-bottom: 10px;
   }
   #hero_title {
     padding-top: 150px;
@@ -997,11 +993,17 @@ li {
   .expertise_item {
     width: 90%;
   }
+  .portfolio_img_container > a {
+    width: 48%;
+  }
   .contact_content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
   .contact_form_container {
     width: 90%;
@@ -1024,7 +1026,51 @@ li {
     -ms-flex-align: center;
     align-items: center;
   }
+  .form_field {
+    margin: 10 auto;
+  }
   .contact_form > .blue_button {
+    margin: 0 auto;
+  }
+  .clients_container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .footer_top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .footer_bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .studio_about > .logo_container > img {
+    margin: 0 auto;
+  }
+  .studio_about,
+  .studio_subt_addr_phone,
+  .studio_social {
+    width: 100%;
+  }
+  .footer_subtitle {
+    text-align: center;
+  }
+  .bottom_left {
+    margin: 0 auto;
+  }
+  .bottom_right {
     margin: 0 auto;
   }
 }
