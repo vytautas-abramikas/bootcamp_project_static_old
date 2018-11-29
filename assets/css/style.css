@@ -720,7 +720,7 @@ li {
 .form_field {
   margin: 0 10px;
   padding: 13px;
-  min-width: 90%;
+  width: 90%;
   border: 1px solid #adacba;
   display: block;
   font-family: 'Roboto', sans-serif;
