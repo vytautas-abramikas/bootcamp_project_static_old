@@ -520,7 +520,7 @@ li{
 	width: 100%;
 }
 .form_field{
-	margin: 15px 10px;
+	margin: 0 10px;
 	padding: 13px;
 	min-width: 90%;
 	border: 1px solid #adacba;
@@ -528,11 +528,11 @@ li{
 	font-family: 'Roboto', sans-serif;
 	font-size: .875rem;
 }
-.contact_form > .blue_button{
+.contact_form .blue_button{
 	background-color: #ffffff;
 	margin: 30px 10px;
 }
-.contact_form > .blue_button:hover{
+.contact_form .blue_button:hover{
 	color: #413d4b;
 	border-color: #413d4b;
 }
@@ -748,9 +748,9 @@ li{
 		align-items: center;
 	}
 	.form_field{
-		margin: 10 auto;
+		margin: 0 auto;
 	}
-	.contact_form > .blue_button{
+	.contact_form .blue_button{
 		margin: 0 auto;
 	}
 	.clients_container{
